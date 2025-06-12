@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/01_Notebooks/../02_MLflow/576372739668588213/5857d0d01b79455696dfef2f06338695/artifacts
+end_time: 1749734143236
+entry_point_name: ''
+experiment_id: '576372739668588213'
+lifecycle_stage: active
+run_id: 5857d0d01b79455696dfef2f06338695
+run_name: XGBoost_Bayesian_Optimization
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749734140193
+status: 3
+tags: []
+user_id: didodeboodt

@@ -1,0 +1,10 @@
+artifact_location: file:///Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/01_Notebooks/../02_MLflow/576372739668588213/models/m-63d7460ce1c848d1a575f5261a85d194/artifacts
+creation_timestamp: 1749742428047
+experiment_id: '576372739668588213'
+last_updated_timestamp: 1749742430791
+model_id: m-63d7460ce1c848d1a575f5261a85d194
+model_type: null
+name: sarima_model
+source_run_id: 6b792616036d4bc09e1ef9595dd78887
+status: 2
+status_message: null

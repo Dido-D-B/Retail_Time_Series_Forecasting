@@ -1,0 +1,10 @@
+artifact_location: file:///Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/01_Notebooks/../02_MLflow/576372739668588213/models/m-1cc9e9d51f1c419696af9f46d3be6a06/artifacts
+creation_timestamp: 1749733694498
+experiment_id: '576372739668588213'
+last_updated_timestamp: 1749733697650
+model_id: m-1cc9e9d51f1c419696af9f46d3be6a06
+model_type: null
+name: model
+source_run_id: 370aa152a6d54592a6e8376f53e14333
+status: 2
+status_message: null

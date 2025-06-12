@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/01_Notebooks/../02_MLflow/576372739668588213/6b792616036d4bc09e1ef9595dd78887/artifacts
+end_time: 1749742430793
+entry_point_name: ''
+experiment_id: '576372739668588213'
+lifecycle_stage: active
+run_id: 6b792616036d4bc09e1ef9595dd78887
+run_name: SARIMA_Model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749742428015
+status: 3
+tags: []
+user_id: didodeboodt

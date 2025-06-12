@@ -1,0 +1,22 @@
+artifact_path: file:///Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/01_Notebooks/../02_MLflow/576372739668588213/models/m-8720622fbad246c0b681d3b70ad813ca/artifacts
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.10.0
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBRegressor
+    model_format: xgb
+    xgb_version: 3.0.2
+mlflow_version: 3.1.0
+model_id: m-8720622fbad246c0b681d3b70ad813ca
+model_size_bytes: 258249
+model_uuid: m-8720622fbad246c0b681d3b70ad813ca
+prompts: null
+run_id: d5845e3576dc407f9e52d2cdd0a02a67
+utc_time_created: '2025-06-12 12:57:09.816850'

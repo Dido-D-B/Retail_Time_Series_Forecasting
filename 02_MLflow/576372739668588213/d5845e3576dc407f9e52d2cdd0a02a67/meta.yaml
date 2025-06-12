@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/01_Notebooks/../02_MLflow/576372739668588213/d5845e3576dc407f9e52d2cdd0a02a67/artifacts
+end_time: 1749733036022
+entry_point_name: ''
+experiment_id: '576372739668588213'
+lifecycle_stage: active
+run_id: d5845e3576dc407f9e52d2cdd0a02a67
+run_name: XGBoost_Baseline
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749733029771
+status: 3
+tags: []
+user_id: didodeboodt

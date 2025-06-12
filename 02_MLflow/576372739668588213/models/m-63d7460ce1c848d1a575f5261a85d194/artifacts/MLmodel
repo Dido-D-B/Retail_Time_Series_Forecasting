@@ -1,0 +1,20 @@
+artifact_path: file:///Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/01_Notebooks/../02_MLflow/576372739668588213/models/m-63d7460ce1c848d1a575f5261a85d194/artifacts
+flavors:
+  python_function:
+    data: model.statsmodels
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.statsmodels
+    python_version: 3.10.0
+  statsmodels:
+    code: null
+    data: model.statsmodels
+    statsmodels_version: 0.14.4
+mlflow_version: 3.1.0
+model_id: m-63d7460ce1c848d1a575f5261a85d194
+model_size_bytes: 20759495
+model_uuid: m-63d7460ce1c848d1a575f5261a85d194
+prompts: null
+run_id: 6b792616036d4bc09e1ef9595dd78887
+utc_time_created: '2025-06-12 15:33:48.056748'
