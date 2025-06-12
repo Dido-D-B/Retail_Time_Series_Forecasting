@@ -130,33 +130,13 @@ div[data-testid="stAppViewContainer"] > main {
 """, unsafe_allow_html=True)
 
 # LOAD DATA & MODEL
-df_full = pd.read_csv(
-    "/Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/00_Data/Prepared_Data/train_full.csv",
-    parse_dates=["date"]
-)
-df_full["date"] = pd.to_datetime(df_full["date"])
-cutoff_date = df_full["date"].max() - pd.Timedelta(days=90)
-df_test = df_full[df_full["date"] > cutoff_date]
-
-stores = df_test['store_nbr'].unique()
-items = df_test['item_nbr'].unique()
-dates = df_test['date'].unique()
-
-combinations = pd.MultiIndex.from_product(
-    [stores, items, dates],
-    names=['store_nbr', 'item_nbr', 'date']
-).to_frame(index=False)
-df_input = pd.merge(
-    combinations,
-    df_test,
-    on=['store_nbr', 'item_nbr', 'date'],
-    how='left'
-)
-df_input.fillna(0, inplace=True)
+df_input = pd.read_csv(
+    "04_Forecast_App/df_input_light.csv", parse_dates=["date"]
+    )
 
 model = joblib.load(
     "/Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/03_Models/xgb_best_model.pkl"
-)
+    )
 
 model_features = [
     'store_nbr', 'item_nbr', 'onpromotion', 'city', 'state', 'store_type', 'store_cluster',
