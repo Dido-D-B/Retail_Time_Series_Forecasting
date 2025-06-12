@@ -131,7 +131,7 @@ div[data-testid="stAppViewContainer"] > main {
 
 # LOAD DATA & MODEL
 df_input = pd.read_csv(
-    "04_Forecast_App/df_input_light.csv", parse_dates=["date"]
+    "/Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/04_Forecast_App/df_input_light.csv", parse_dates=["date"]
     )
 
 model = joblib.load(
