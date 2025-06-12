@@ -157,6 +157,10 @@ streamlit==1.45.1
 tenacity==9.1.2
 tensorboard==2.15.2
 tensorboard-data-server==0.7.2
+tensorflow==2.15.0
+tensorflow-estimator==2.15.0
+tensorflow-io-gcs-filesystem==0.37.1
+tensorflow-macos==2.15.0
 termcolor==3.1.0
 terminado==0.18.1
 threadpoolctl==3.6.0
