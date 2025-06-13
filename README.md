@@ -40,9 +40,9 @@ You can find the slide deck [here](https://docs.google.com/presentation/d/1_6X_8
 
 ## Author and Acknowledgments
 
-**Created by**: [Dido De Boodt](https://www.linkedin.com/in/dido-de-boodt/)
+Created by: [Dido De Boodt](https://www.linkedin.com/in/dido-de-boodt/)
 
-**Date**: June 2025
+Date: June 2025
 
 Project powered by Python, Streamlit, and XGBoost
 
