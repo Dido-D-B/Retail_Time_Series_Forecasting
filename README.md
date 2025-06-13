@@ -30,7 +30,6 @@ This project focuses on forecasting daily unit sales for a large Ecuadorian groc
 A deployed Streamlit app allows users to select a store, item, and date to get a forecast + 10-day projection. See the [App Repo](https://github.com/Dido-D-B/RetailForecasting_App) and the [Deployed App](https://retailforecastingapp-nwuukzuxmjkoqed66zcxcu.streamlit.app/).
 
 ![Screenshot 2025-06-13 at 03 06 14](https://github.com/user-attachments/assets/f4955f3c-60c3-46a6-963e-aa27d834c8bc)
-![Screenshot 2025-06-13 at 03 06 14](https://github.com/user-attachments/assets/f4955f3c-60c3-46a6-963e-aa27d834c8bc)
 
 
 ## Requirements
