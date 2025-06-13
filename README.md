@@ -45,3 +45,10 @@ pip install -r requirements.txt
 ## Presentation
 
 You can find the slide deck [here](https://docs.google.com/presentation/d/1_6X_8SS0RpAmwbGZBB6WTW7p0CXxH4zm5st-aIMQjsU/edit?usp=sharing)
+
+## Author and Acknowledgments
+
+**Created by**: [Dido De Boodt](https://www.linkedin.com/in/dido-de-boodt/)
+**Date**: June 2025
+
+Special thanks to **Masterschool** and **Kaggle** for the data, which can be found [here](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting). 
