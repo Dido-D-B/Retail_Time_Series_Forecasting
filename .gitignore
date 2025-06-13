@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 .DS_Store00_Data/Raw_Data/
 00_Data/Prepared_Data/train_full.csv
+04_Forecast_App/df_input.csv
