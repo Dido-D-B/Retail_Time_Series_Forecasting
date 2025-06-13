@@ -41,6 +41,7 @@ You can find the slide deck [here](https://docs.google.com/presentation/d/1_6X_8
 ## Author and Acknowledgments
 
 **Created by**: [Dido De Boodt](https://www.linkedin.com/in/dido-de-boodt/)
+
 **Date**: June 2025
 
 Special thanks to **Masterschool** and **Kaggle** for the data, which can be found [here](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting). 
