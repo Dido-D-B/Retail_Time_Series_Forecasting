@@ -1,5 +1,8 @@
 # Retail Time Series Forecasting Project
 
+<img width="758" alt="Screenshot 2025-06-11 at 22 05 35" src="https://github.com/user-attachments/assets/ce9dcdfa-9cfd-4442-990e-b116bc795cd2" />
+
+
 This project focuses on forecasting daily unit sales for a large Ecuadorian grocery chain using time series modeling and machine learning. The goal is to improve inventory planning and business insights by predicting future sales based on historical patterns and calendar events.
 
 ## Project Structure
