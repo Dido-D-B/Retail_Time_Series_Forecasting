@@ -5,6 +5,9 @@ import joblib
 import xgboost as xgb
 import datetime
 import base64
+import gdown
+import os
+
 
 # PAGE CONFIGURATION
 st.set_page_config(page_title="Retail Forecasting", layout="centered")
@@ -101,7 +104,7 @@ def set_background(image_path):
     </style>
     """, unsafe_allow_html=True)
 
-set_background("04_Forecast_App/background.png")
+set_background("background.png")
 
 # Transparent container Main Content
 st.markdown("""
@@ -130,13 +133,24 @@ div[data-testid="stAppViewContainer"] > main {
 """, unsafe_allow_html=True)
 
 # LOAD DATA & MODEL
-df_input = pd.read_csv(
-    "/Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/04_Forecast_App/df_input_light.csv", parse_dates=["date"]
-    )
+df_input = pd.read_csv("df_input_light.csv")
+stores = df_input['store_nbr'].unique().tolist()
+dates = df_input['date'].unique().tolist()
 
-model = joblib.load(
-    "/Users/didodeboodt/Documents/Projects/Retail_Forecasting_Project/03_Models/xgb_best_model.pkl"
-    )
+# Path where the model will be saved locally
+model_path = "xgb_best_model.pkl"
+
+# Google Drive file ID
+file_id = "1MiZKnq6CkNa_OtT_kyC9aFRo9LXPf4dR"
+url = f"https://drive.google.com/uc?id={file_id}"
+
+# Download the model if not already present
+if not os.path.exists(model_path):
+    gdown.download(url, model_path, quiet=False)
+
+# Load the model
+model = xgb.Booster()
+model.load_model(model_path)
 
 model_features = [
     'store_nbr', 'item_nbr', 'onpromotion', 'city', 'state', 'store_type', 'store_cluster',
@@ -149,7 +163,7 @@ model_features = [
 ]
 
 # SIDEBAR
-item_sales = df_test.groupby('item_nbr')['unit_sales'].sum().sort_values(ascending=False)
+item_sales = df_input.groupby('item_nbr')['unit_sales'].sum().sort_values(ascending=False)
 sorted_items = item_sales.index.tolist()
 
 with st.sidebar:
@@ -216,10 +230,11 @@ else:
     """, unsafe_allow_html=True)
 
     # Historical Chart
-    history = df_test[
-        (df_test['store_nbr'] == store_nbr) &
-        (df_test['item_nbr'] == item_nbr)
-    ].sort_values("date")
+    history = df_input[
+        (df_input['store_nbr'] == store_nbr) &
+        (df_input['item_nbr'] == item_nbr) &
+        (df_input['date'] < pd.to_datetime(forecast_date))
+]
 
     if not history.empty:
         st.markdown("### Historical Sales Trend")
