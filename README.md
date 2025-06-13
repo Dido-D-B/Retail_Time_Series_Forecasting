@@ -34,14 +34,6 @@ A deployed Streamlit app allows users to select a store, item, and date to get a
 
 ![Screenshot 2025-06-13 at 03 06 14](https://github.com/user-attachments/assets/f4955f3c-60c3-46a6-963e-aa27d834c8bc)
 
-
-## Requirements
-
-Install packages with:
-
-```bash
-pip install -r requirements.txt
-
 ## Presentation
 
 You can find the slide deck [here](https://docs.google.com/presentation/d/1_6X_8SS0RpAmwbGZBB6WTW7p0CXxH4zm5st-aIMQjsU/edit?usp=sharing)
@@ -52,3 +44,11 @@ You can find the slide deck [here](https://docs.google.com/presentation/d/1_6X_8
 **Date**: June 2025
 
 Special thanks to **Masterschool** and **Kaggle** for the data, which can be found [here](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting). 
+
+## Requirements
+
+Install packages with:
+
+```bash
+pip install -r requirements.txt
+
